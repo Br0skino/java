@@ -1,0 +1,64 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author aula
+ */
+import java.util.*;
+
+public class Main2 {
+
+    public static void main(String[] args) {
+        int uno = 0, due = 0, tre = 0, quattro = 0, cinque = 0, sei = 0, sette = 0, otto = 0, nove = 0, zero = 0;
+        int divisione = 0;
+        int divisore = 10;
+        int resto;
+        Scanner sc = new Scanner(System.in);
+        int numero = sc.nextInt();
+        divisione = numero;
+        while (divisione != 0) {
+            resto = divisione % divisore;
+            divisione = divisione / divisore;
+            System.out.println("Risultato della divisione:" + divisione);
+            System.out.println("Il resto è" + resto);
+            switch (resto) {
+                case 1:
+                    uno++;
+                    break;
+                case 2:
+                    due++;
+                    break;
+                case 3:
+                    tre++;
+                    break;
+                case 4:
+                    quattro++;
+                    break;
+                case 5:
+                    cinque++;
+                    break;
+                case 6:
+                    sei++;
+                    break;
+                case 7:
+                    sette++;
+                    break;
+                case 8:
+                    otto++;
+                    break;
+                case 9:
+                    nove++;
+                    break;
+                case 0:
+                    zero++;
+                    break;
+            }
+        }
+        System.out.println("Ci sono " + uno + " uno, " + due + " due ," + tre + " Tre ," + quattro + " Quattro ," + cinque + " Cinque ," + sei + " Sei ," + sette + " Sette ," + otto + " Otto ," + nove + " Nove ," + zero + " Zeri");
+
+    }
+}
